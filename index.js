@@ -4,8 +4,8 @@ var recipes={
   sex: "female"
 };
 function updateObjectWithKeyAndValue(object, key, value){
-  object[key]=value;
   var obj=Object.assign({},object);
+  obj[key]=value;
   return obj;
 }
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
